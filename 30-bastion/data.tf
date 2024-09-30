@@ -8,20 +8,20 @@ data "aws_ssm_parameter" "public_subnet_ids" {
 
 data "aws_ami" "anilaws" {
   most_recent = true
-  owners = ["973714476881"]
+  owners      = ["973714476881"]
 
   filter {
-    name = "name"
-    values = [ "RHEL-9-DevOps-Practice" ]
+    name   = "name"
+    values = ["RHEL-9-DevOps-Practice"]
   }
 
   filter {
-    name = "root-device-type"
-    values = [ "ebs" ]
+    name   = "root-device-type"
+    values = ["ebs"]
   }
 
   filter {
-    name = "virtualization-type"
-    values = [ "hvm" ]
+    name   = "virtualization-type"
+    values = ["hvm"]
   }
 }
