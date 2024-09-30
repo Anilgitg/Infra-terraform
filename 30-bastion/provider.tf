@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "mys3bucket-remote-state"
-    key = "for-vpc"
+    key = "for-bastion"
     region = "us-east-1"
     dynamodb_table = "demo-table-locking"
   }
